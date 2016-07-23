@@ -11,7 +11,7 @@ samples=[]
 responses=[]
 
 alist_filter = ['png','jpg','bmp','gif']
-rootDir ="/home/holyox/lekha/train_images/"
+rootDir ="path/to/train_images/"
 for dirName, subdirList, fileList in os.walk(rootDir):
     #print('Found directory: %s' %dirName)
     file_path = os.path.join(dirName,'utf8')
@@ -41,10 +41,10 @@ np.savetxt('feature_array.txt', samples)
 np.savetxt('response_array.txt', responses,fmt="%s")
 X_sample = np.loadtxt('feature_array.txt')
 Y_label=np.genfromtxt('response_array.txt',dtype=None)
-"""
-X_normal=normalize(X_sample, norm='max', axis=1, copy=True)
+
+#X_normal=normalize(X_sample, norm='max', axis=1, copy=True)
 #responses = np.array(responses,np.float32)
 clf=svm.SVC(decision_function_shape='ovo',C=22.68, gamma=0.88)
 clf.set_params(kernel='rbf').fit(X_normal,Y_label)
-joblib.dump(clf, 'svm/svm_data.lekha')"""
+joblib.dump(clf, 'svm/svm_data.lekha')
 
