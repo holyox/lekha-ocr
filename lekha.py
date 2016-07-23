@@ -7,9 +7,9 @@ from math import atan2, degrees, pi
 import features
 import make_word
 
-im = cv2.imread('/home/holyox/code/ml_imag/o11b.tiff',0)
+im = cv2.imread('path/to/image/*.tiff',0)
 img= cv2.adaptiveThreshold(im,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,243,43)
-classifier = joblib.load('/home/holyox/code/svm/svm/svm_data.lekha')
+classifier = joblib.load('path/to/classifier/rsvm/svm_data.lekha')
 MyStruct = namedtuple('MyStruct', 'line_no line_start line_end bowl_start bowl_end word_no char_pos x1 y1 wi hi label')
 NodeDb = []
 height,width=img.shape
