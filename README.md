@@ -48,7 +48,7 @@ This project is developed by [SPACE] (http://www.space-kerala.org/) in associati
 
 Contributors
 =======
-**Arun Joseph** contributed most of the engine initial developments.
+**Arun Joseph** developed lekha-ocr.
 
 **Sachin** developing second phase
 
