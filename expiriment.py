@@ -70,6 +70,3 @@ for score in scores:
     y_true, y_pred = y_test, clf.predict(X_test)
     print(classification_report(y_true, y_pred))
     print()
-
-# Note the problem is too easy: the hyperparameter plateau is too flat and the
-# output model is the same for precision and recall with ties in quality.
