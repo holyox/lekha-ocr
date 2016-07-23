@@ -1,9 +1,11 @@
-THE DISCRIPTION GIVEN MAY CHANGE AS THE DEVELOPMENT PROGRESSES                                                                  
+Original Work is https://gitlab.com/space-kerala/lekha-OCR.git
+
+THE DISCRIPTION GIVEN BELOW MAY CHANGE AS THE DEVELOPMENT PROGRESSES                                                                  
 This Project is under Development and Code is buit in that way ,so is subject to errors
 
 To run this Project
 
-  1>Exectute the training.py,The files used for training is in original repository
+  1>Exectute the training.py,The files used for training is in original repository(https://gitlab.com/space-kerala/lekha-OCR-database.git)
 
   2>Run the lekha.py .NOTE it doesnt take command line arguments.you have to change the file read path in lekha.py
 
@@ -13,4 +15,4 @@ You can view the CONFUSION MATRIX buy running confusion.py for a given settings 
 
   1>the training set is split into test and train
 
-Experiments can be done using Experiment.py where grid search and parameter optimisation techniques tested
+Experiments can be done using Experiment.py where grid search and parameter optimisation techniques are tested
